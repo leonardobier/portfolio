@@ -19,7 +19,7 @@ const Techs = () => {
         <div className="tech-card"><FaGitAlt className="tech-icon git" /><span>Git</span></div>
         <div className="tech-card"><SiGithub className="tech-icon github" /><span>GitHub</span></div>
 
-        {/* Iconify para os ícones que faltavam */}
+        {/* Iconify para os ícones que não existem no react-icons */}
         <div className="tech-card">
           <Icon icon="simple-icons:microsoft" className="tech-icon microsoft" />
           <span>C#</span>

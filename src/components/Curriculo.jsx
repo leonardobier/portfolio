@@ -31,7 +31,7 @@ function Curriculo() {
           </h3>
 
           <motion.a
-          href="/cv/Curriculo Leonardo Lage Bier.pdf"
+          href="/cv/Currículo - Leonardo Lage Bier.pdf"
           download="Curriculo-Leonardo.pdf"
           className="gradient-btn"
           whileHover={{ scale: 1.05 }}
@@ -41,7 +41,7 @@ function Curriculo() {
         </motion.a>
 
         <motion.a
-          href="/cv/Resume Leonardo Lage Bier.pdf"
+          href="/cv/Resume - Leonardo Lage Bier.pdf"
           download="Resume-Leonardo.pdf"
           className="gradient-btn"
           whileHover={{ scale: 1.05 }}

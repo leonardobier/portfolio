@@ -1,6 +1,6 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaGitAlt } from "react-icons/fa";
-import { SiVite, SiGithub, SiMysql } from "react-icons/si";
+import { SiVite, SiGithub, SiMysql, SiCsharp, SiVisualstudio, SiVisualstudiocode } from "react-icons/si";
 
 const Techs = () => {
   return (
@@ -43,6 +43,18 @@ const Techs = () => {
         <div className="tech-card">
           <SiGithub className="tech-icon github" />
           <span>GitHub</span>
+        </div>
+        <div className="tech-card">
+          <SiCsharp className="tech-icon csharp" />
+          <span>C#</span>
+        </div>
+        <div className="tech-card">
+          <SiVisualstudio className="tech-icon visualstudio" />
+          <span>Visual Studio</span>
+        </div>
+        <div className="tech-card">
+          <SiVisualstudiocode className="tech-icon vscode" />
+          <span>Visual Studio Code</span>
         </div>
       </div>
     </section>

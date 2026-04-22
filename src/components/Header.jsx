@@ -15,6 +15,7 @@ function Header() {
       <nav className={open ? "nav open" : "nav"}>
         <a href="#hero">Início</a>
         <a href="#sobre">Sobre mim</a>
+        <a href="#techs">Tecnologias</a>
         <a href="#marketing">Soluções</a>
         <a href="#projects">Projetos</a>
         <a href="#contact">Contato</a>

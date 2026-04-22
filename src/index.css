@@ -130,7 +130,7 @@ body {
 
 /* 🌌 Hero */
 #hero {
-  min-height: 80vh;   /* ocupa 80% da altura da tela */
+  min-height: 75vh;   /* ocupa 80% da altura da tela */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,7 +145,7 @@ body {
 }
 
 #hero .overlay {
-  max-width: 800px;
+  max-width: 750px;
   padding: 2rem;
   animation: fadeIn 1.5s ease-in-out;
 }
@@ -212,6 +212,24 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.4rem 1rem;
+  border: 2px solid var(--accent); /* borda azul */
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(255,255,255,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--accent);
 }
 
 /* 🎯 Seção Sobre Mim */
@@ -493,6 +511,88 @@ button:hover {
 #contact button:hover {
   background-color: var(--primary);
   transform: scale(1.05);
+}
+
+/* Currículo */
+.curriculo-grid {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start; /* alinha os blocos pelo topo */
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.cv-block,
+.github-block {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centraliza horizontalmente */
+}
+
+.block-title {
+  color: var(--accent); /* azul */
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.cv-block {
+  justify-content: center; /* centraliza verticalmente os botões */
+  gap: 1rem;
+}
+
+.cv-block a {
+  background: var(--background);
+  color: var(--text);
+  border: 2px solid transparent;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.cv-block a:hover {
+  transform: scale(1.05);
+  color: var(--accent);
+  box-shadow: 0 0 12px var(--accent);
+}
+
+.github-block ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.github-block li {
+  background: #1a1a1a;
+  padding: 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.github-block li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px var(--accent);
+}
+
+.github-block a {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* ⚓ Footer */

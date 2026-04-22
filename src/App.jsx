@@ -5,6 +5,7 @@ import Sobre from "./components/Sobre";
 import Techs from "./components/Techs";
 import Marketing from "./components/Marketing";
 import Projects from "./components/Projects";
+import Curriculo from "./components/Curriculo"
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./index.css";
@@ -18,6 +19,7 @@ function App() {
       <Techs />
       <Marketing />
       <Projects />
+      <Curriculo />
       <Contact />
       <Footer />
     </div>

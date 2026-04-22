@@ -4,7 +4,7 @@ function Sobre() {
   return (
     <section id="sobre" className="sobre">
       <div className="container">
-        <h2>👨‍💻 Sobre Mim</h2>
+        <h2>Sobre Mim</h2>
         <p>
           Tenho 18 anos e sou <strong>Desenvolvedor Full-Stack</strong>, Técnico em Informática e
           entusiasta de Inteligência Artificial. Participei da criação de sistemas de gestão e suporte em TI,

@@ -177,6 +177,29 @@ body {
   transform: scale(1.05);
 }
 
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hero-buttons button {
+  background-color: var(--accent);
+  color: var(--text);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.hero-buttons button:hover {
+  background-color: var(--primary);
+  transform: scale(1.05);
+}
+
 /* ✨ Animação suave */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }

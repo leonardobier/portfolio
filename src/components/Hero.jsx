@@ -21,13 +21,28 @@ function Hero() {
           Desenvolvedor Web e Desktop | Estudante de Análise e Desenvolvimento de Sistemas | Técnico em Informática
         </motion.p>
 
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => document.getElementById("contact").scrollIntoView()}
+        <motion.div
+          className="hero-buttons"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8 }}
         >
-          Fale comigo
-        </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => document.getElementById("projects").scrollIntoView()}
+          >
+            Ver Portfólio
+          </motion.button>
+
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => document.getElementById("contact").scrollIntoView()}
+          >
+            Fale comigo
+          </motion.button>
+        </motion.div>
       </div>
     </section>
   );

@@ -227,35 +227,53 @@ body {
 }
 
 .tech-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;                     /* usa grid em vez de flex */
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 2rem;
+  justify-items: center;             /* centraliza os cards */
 }
 
 .tech-card {
   background: #1a1a1a;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 1.5rem;
   width: 140px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.6);
-  transition: transform 0.3s, background 0.3s;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;            /* ícone em cima, texto embaixo */
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-card span {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ddd;
+  transition: color 0.3s;
 }
 
 .tech-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px) scale(1.05);
   background: #222;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.8);
 }
 
 .tech-icon {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  transition: transform 0.3s;
+  transition: transform 0.3s, filter 0.3s;
 }
 
 .tech-card:hover .tech-icon {
-  transform: scale(1.2);
+  transform: scale(1.3) rotate(5deg);
+  filter: drop-shadow(0 0 8px var(--accent));
+}
+
+.tech-card:hover span {
+  color: var(--accent);
 }
 
 /* 🎨 Cores específicas para cada ícone */

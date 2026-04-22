@@ -1,6 +1,14 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaGitAlt } from "react-icons/fa";
-import { SiVite, SiGithub, SiMysql, SiCsharp, SiVisualstudio, SiVisualstudiocode } from "react-icons/si";
+import { 
+  SiVite, 
+  SiGithub, 
+  SiMysql, 
+  SiMicrosoft,   // usado para representar C#
+  SiDotnet,      // ícone oficial do .NET
+  SiVisualstudio, 
+  SiVisualstudiocode 
+} from "react-icons/si";
 
 const Techs = () => {
   return (
@@ -45,8 +53,12 @@ const Techs = () => {
           <span>GitHub</span>
         </div>
         <div className="tech-card">
-          <SiCsharp className="tech-icon csharp" />
+          <SiMicrosoft className="tech-icon microsoft" />
           <span>C#</span>
+        </div>
+        <div className="tech-card">
+          <SiDotnet className="tech-icon dotnet" />
+          <span>.NET</span>
         </div>
         <div className="tech-card">
           <SiVisualstudio className="tech-icon visualstudio" />

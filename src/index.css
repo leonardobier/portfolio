@@ -268,9 +268,10 @@ body {
 .tech-icon.mysql { color: #00618a; }
 .tech-icon.git { color: #f34f29; }
 .tech-icon.github { color: #ffffff; }
-.tech-icon.csharp { color: #178600; }
-.tech-icon.visualstudio { color: #5c2d91; }
-.tech-icon.vscode { color: #007acc; }
+.tech-icon.microsoft { color: #178600; }     /* verde usado para representar C# */
+.tech-icon.dotnet { color: #512bd4; }        /* roxo oficial do .NET */
+.tech-icon.visualstudio { color: #5c2d91; }  /* roxo do Visual Studio */
+.tech-icon.vscode { color: #007acc; }        /* azul do VS Code */
 
 /* 🎯 Seção de Marketing */
 .marketing {

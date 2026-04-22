@@ -68,7 +68,7 @@ body {
   text-decoration: none;
   font-weight: 600;        /* um pouco mais fino que bold */
   font-size: 0.9rem;       /* reduzido para deixar discreto */
-  padding: 0.3rem 0.7rem;  /* menos espaço interno */
+  padding: 0.4rem 0.8rem;  /* menos espaço interno */
   border-radius: 15px;     /* bordas mais compactas */
   background: rgba(255,255,255,0.08);
   transition: background 0.3s, transform 0.2s;

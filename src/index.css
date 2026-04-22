@@ -304,7 +304,7 @@ body {
 
 /* 🎯 Seção de Marketing */
 .marketing {
-  background: #111;          /* mesmo fundo do contato */
+  background: #0a0a0a;          /* mesmo fundo do contato */
   padding: 4rem 2rem;
   text-align: center;
   /* ❌ removida a linha divisória */

@@ -192,6 +192,69 @@ body {
   text-align: justify;   /* alinhamento justificado */
 }
 
+/* 🎯 Seção de Tecnologias */
+.techs {
+  background: #0a0a0a;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.techs h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.techs p {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.tech-card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 140px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+.tech-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.tech-card:hover .tech-icon {
+  transform: scale(1.2);
+}
+
+/* 🎨 Cores específicas para cada ícone */
+.tech-icon.html { color: #e34c26; }
+.tech-icon.css { color: #264de4; }
+.tech-icon.js { color: #f7df1e; }
+.tech-icon.react { color: #61dafb; }
+.tech-icon.vite { color: #646cff; }
+.tech-icon.python { color: #3776ab; }
+.tech-icon.mysql { color: #00618a; }
+.tech-icon.git { color: #f34f29; }
+.tech-icon.github { color: #ffffff; }
+
 /* 🎯 Seção de Marketing */
 .marketing {
   background: #111;          /* mesmo fundo do contato */

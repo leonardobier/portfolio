@@ -21,7 +21,7 @@ const Techs = () => {
 
         {/* Iconify para os ícones que não existem no react-icons */}
         <div className="tech-card">
-          <Icon icon="simple-icons:microsoft" className="tech-icon microsoft" />
+          <span className="tech-icon csharp">C#</span>
           <span>C#</span>
         </div>
         <div className="tech-card">

@@ -286,7 +286,18 @@ body {
 .tech-icon.mysql { color: #00618a; }
 .tech-icon.git { color: #f34f29; }
 .tech-icon.github { color: #ffffff; }
-.tech-icon.microsoft { color: #178600; }     /* verde usado para C# */
+.tech-icon.csharp {
+  font-size: 3rem;       /* mesmo tamanho dos ícones */
+  font-weight: bold;     /* deixa o texto marcante */
+  color: #178600;        /* verde usado para C# */
+  margin-bottom: 0.5rem; /* espaço igual aos outros ícones */
+  transition: transform 0.3s;
+}
+
+.tech-card:hover .tech-icon.csharp {
+  transform: scale(1.2);
+}
+
 .tech-icon.dotnet { color: #512bd4; }        /* roxo oficial do .NET */
 .tech-icon.visualstudio { color: #5c2d91; }  /* roxo do Visual Studio */
 .tech-icon.vscode { color: #007acc; }        /* azul do VS Code */

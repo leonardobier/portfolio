@@ -18,6 +18,21 @@ body {
   color: var(--text);
 }
 
+/* Elemento que segue o mouse */
+.cursor-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;          /* tamanho da bola */
+  height: 200px;
+  border-radius: 50%;
+  pointer-events: none;  /* não interfere nos cliques */
+  background: radial-gradient(circle, rgba(40,123,191,0.4) 0%, rgba(8,49,111,0.1) 70%);
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s linear;
+  z-index: 9999;         /* fica acima de tudo */
+}
+
 /* 🔝 Header responsivo */
 .header {
   position: relative;

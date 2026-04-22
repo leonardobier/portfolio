@@ -1,0 +1,382 @@
+/* 🎨 Paleta escura com dois tons de azul */
+:root {
+  --primary: #08316f;   /* Azul escuro */
+  --accent: #287bbf;    /* Azul claro */
+  --background: #0a0a0a; /* Preto */
+  --text: #ffffff;       /* Branco */
+}
+
+/* 🔄 Reset e estilo global */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* 🔝 Header responsivo */
+/* Header */
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary);
+  color: var(--text);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Nome à esquerda */
+.profile h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text);
+}
+
+/* Navegação central */
+.nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.1);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.nav a:hover {
+  background: var(--accent);
+  color: var(--background);
+  transform: scale(1.05);
+}
+
+/* Ícones sociais à direita */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: var(--accent);
+  font-size: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Menu mobile */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    right: 0;
+    left: auto;
+    transform: none;
+    display: none;
+    flex-direction: column;
+    background: var(--primary);
+    top: 70px;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* 🌌 Hero integrado */
+#hero {
+  min-height: 80vh;   /* ocupa 60% da altura da tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(13, 71, 161, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1526378722484-cc5c1e3c7f2b") no-repeat center center/cover;
+  color: var(--text);
+  padding: 2rem;
+}
+
+#hero .overlay {
+  max-width: 800px;
+  padding: 2rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+#hero button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#hero button:hover {
+  background-color: var(--secondary);
+  transform: scale(1.05);
+}
+
+/* ✨ Animação suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🎯 Seção Sobre Mim */
+.sobre {
+  background: #0a0a0a;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+/* Texto centralizado na seção, mas justificado */
+.sobre p {
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  color: #ddd;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;   /* alinhamento justificado */
+}
+
+/* 🎯 Seção de Marketing */
+.marketing {
+  background: #111;          /* mesmo fundo do contato */
+  padding: 4rem 2rem;
+  text-align: center;
+  /* ❌ removida a linha divisória */
+}
+
+.marketing h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.marketing p {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+.marketing .cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.marketing .card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.marketing .card:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+.marketing .card h3 {
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+/* 🔘 Botões globais */
+button {
+  background-color: var(--primary);
+  color: var(--text);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--accent);
+  transform: scale(1.05);
+}
+
+/* 📦 Seções */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+/* 🗂 Cards de projetos */
+.card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  transition: transform 0.3s, background 0.3s;
+  color: var(--text);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+/* 📬 Formulário de contato */
+#contact {
+  background: #111;
+  padding: 4rem 2rem;
+  text-align: center; /* centraliza o título */
+}
+
+#contact h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;       /* centraliza o formulário */
+  text-align: left;     /* mantém labels alinhados à esquerda */
+  padding: 1rem;
+  /* ❌ removido o fundo e sombra para não parecer outro card */
+}
+
+#contact label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+#contact input,
+#contact textarea {
+  width: 94%;
+  padding: 0.9rem;
+  margin-top: 0.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: #0a0a0a;
+  color: var(--text);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 8px var(--accent);
+}
+
+#contact button {
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: var(--accent);
+  color: var(--text);
+  border: none;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#contact button:hover {
+  background-color: var(--primary);
+  transform: scale(1.05);
+}
+
+/* ⚓ Footer */
+footer {
+  background: var(--primary);
+  color: var(--text);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--text);       /* links brancos */
+  text-decoration: none;
+  margin: 0 0.5rem;
+  display: inline-flex;     /* alinhar ícone + texto */
+  align-items: center;
+  gap: 0.3rem;              /* espaço entre ícone e texto */
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: var(--accent);     /* muda para azul claro no hover */
+}
+
+footer svg {
+  color: var(--text);       /* ícones brancos */
+  font-size: 1.2rem;        /* tamanho dos ícones */
+}

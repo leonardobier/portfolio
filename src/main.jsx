@@ -17,5 +17,6 @@ document.body.appendChild(cursor);
 
 // 🔄 Atualizar posição conforme o mouse se move
 document.addEventListener("mousemove", (e) => {
-  cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  cursor.style.left = `${e.clientX}px`;
+  cursor.style.top = `${e.clientY}px`;
 });

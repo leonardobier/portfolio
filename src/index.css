@@ -23,14 +23,14 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px;          /* tamanho da bola */
-  height: 200px;
+  width: 180px;          /* bola um pouco menor */
+  height: 180px;
   border-radius: 50%;
-  pointer-events: none;  /* não interfere nos cliques */
-  background: radial-gradient(circle, rgba(40,123,191,0.4) 0%, rgba(8,49,111,0.1) 70%);
-  transform: translate(-50%, -50%);
-  transition: transform 0.05s linear;
-  z-index: 9999;         /* fica acima de tudo */
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(40,123,191,0.25) 0%, rgba(8,49,111,0.05) 70%);
+  transform: translate(-50%, -50%); /* centraliza no cursor */
+  transition: transform 0.08s ease-out; /* movimento mais suave */
+  z-index: 9999;
 }
 
 /* 🔝 Header responsivo */

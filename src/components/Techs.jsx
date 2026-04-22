@@ -5,7 +5,8 @@ import { SiVite, SiGithub, SiMysql } from "react-icons/si";
 const Techs = () => {
   return (
     <section id="techs" className="section techs">
-      <h2>Essas são algumas das ferramentas e linguagens que utilizo no meu dia a dia:</h2>
+      <h2>Tecnologias</h2>
+      <p>Essas são algumas das ferramentas e linguagens que utilizo no meu dia a dia:</p>
       <div className="tech-grid">
         <div className="tech-card">
           <FaHtml5 className="tech-icon html" />

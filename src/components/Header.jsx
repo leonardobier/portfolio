@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -23,10 +23,26 @@ function Header() {
 
       {/* Ícones sociais à direita */}
       <div className="social-icons">
-        <a href="https://github.com/leonardobier" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://wa.me/5521998492427"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#25D366" }}
+        >
+          <FaWhatsapp />
+        </a>
+        <a
+          href="https://github.com/leonardobier"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/leonardolagebier" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/leonardolagebier"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin />
         </a>
       </div>

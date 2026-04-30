@@ -4,19 +4,24 @@ import { motion } from "framer-motion";
 function Projects() {
   const projetos = [
     {
-      titulo: "Sistema de Gestão Escolar e Esportiva (Web)",
+      titulo: "Sistema de Gestão Escolar e Esportiva - Colégio João Paulo I (Web)",
       descricao:
         "Desenvolvimento de um sistema web hospedado para gestão escolar e esportiva, integrando módulos completos que contemplam a versão para alunos e administradores no acompanhamento de eventos esportivos, um módulo de reservas de assentos e mesas com controle de disponibilidade e relatórios de ocupação, além de um módulo de almoxarifado robusto com registro de movimentações, relatórios em PDF e filtros avançados por período, evento e turma; a solução foi projetada para otimizar processos internos, garantir segurança e usabilidade em diferentes níveis de acesso (aluno, secretaria, admin e almoxarifado) e oferecer uma experiência intuitiva que centraliza em uma única plataforma todas as necessidades de organização escolar e esportiva."
     },
     {
-      titulo: "Sistema de Gestão Acadêmica e Financeira (Desktop em C#)",
+      titulo: "Sistema de Gestão Acadêmica e Financeira - Studio de Dança Ingrid Soutinho (C# + MySQL)",
       descricao:
         "Esse sistema é uma aplicação desktop desenvolvida em C# com MySQL no Visual Studio, voltada para a gestão acadêmica completa de uma instituição, permitindo o controle de alunos, responsáveis, turmas e mensalidades, além de oferecer recursos financeiros como emissão de relatórios, baixa de pagamentos e exportação para PDF/Excel; também inclui módulos de eventos e espetáculos, com funcionalidades para reservar assentos, confirmar compras, gerenciar ingressos e acompanhar o status das vendas, integrando de forma prática e centralizada todas as operações administrativas, acadêmicas e financeiras em uma única plataforma."
     },
     {
-      titulo: "Gestão de TI no Colégio CAFA",
+      titulo: "Gestão de TI - Colégio de Aplicação Ferreira de Almeida",
       descricao:
         "Responsável pelo departamento de TI do Colégio de Aplicação Ferreira de Almeida, onde realizo suporte técnico remoto e presencial, incluindo suporte de redes. Gerencio o sistema de segurança com catraca de reconhecimento facial e atuo na melhoria da usabilidade das principais plataformas utilizadas pela instituição, como Positivo On, Sistema de Gestão Escolar completo e agenda digital. Meu trabalho envolve garantir eficiência, segurança e uma experiência tecnológica otimizada para alunos, professores e colaboradores."
+    },
+    {
+      titulo: "Sistema de Gestão Escolar – Colégio João Paulo I (C# + MySQL)",
+      descricao:
+        "Sistema desktop desenvolvido em C# com banco de dados MySQL, criado como projeto de TCC para o Colégio João Paulo I. A aplicação inclui autenticação com múltiplos níveis de acesso (admin, secretaria, professor e aluno), cadastro e gerenciamento de pontuação para competições acadêmicas e esportivas, além de geração automática de relatórios com interface intuitiva e filtros personalizados. O sistema foi projetado para otimizar o acompanhamento das Olimpíadas escolares e centralizar o controle de desempenho dos alunos."
     }
   ];
 
@@ -42,13 +47,21 @@ function Projects() {
               maxWidth: "400px",
               flex: "1 1 300px",
               margin: "0 auto",
-              textAlign: "justify", // texto justificado
+              textAlign: "justify",
             }}
           >
-            <h3 style={{ marginBottom: "1rem", color: "var(--accent)", textAlign: "center" }}>
+            <h3
+              style={{
+                marginBottom: "1rem",
+                color: "var(--accent)",
+                textAlign: "center",
+              }}
+            >
               {proj.titulo}
             </h3>
-            <p style={{ fontSize: "0.95rem", lineHeight: "1.5" }}>{proj.descricao}</p>
+            <p style={{ fontSize: "0.95rem", lineHeight: "1.5" }}>
+              {proj.descricao}
+            </p>
           </motion.div>
         ))}
       </div>

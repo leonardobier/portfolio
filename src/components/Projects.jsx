@@ -9,6 +9,11 @@ function Projects() {
         "Desenvolvimento de um sistema web hospedado para gestão escolar e esportiva, integrando módulos completos que contemplam a versão para alunos e administradores no acompanhamento de eventos esportivos, um módulo de reservas de assentos e mesas com controle de disponibilidade e relatórios de ocupação, além de um módulo de almoxarifado robusto com registro de movimentações, relatórios em PDF e filtros avançados por período, evento e turma; a solução foi projetada para otimizar processos internos, garantir segurança e usabilidade em diferentes níveis de acesso (aluno, secretaria, admin e almoxarifado) e oferecer uma experiência intuitiva que centraliza em uma única plataforma todas as necessidades de organização escolar e esportiva."
     },
     {
+      titulo: "Sistema de Gestão Acadêmica e Financeira - Studio de Dança Ingrid Soutinho (Web)",
+      descricao:
+        "Desenvolvi um sistema web robusto para gestão acadêmica e administrativa de academias e estúdios de dança, reunindo em uma única plataforma o controle de alunos, responsáveis, turmas e mensalidades. A solução inclui recursos financeiros como emissão de relatórios, baixa de pagamentos e exportação para PDF, além de um módulo de espetáculos com venda de ingressos no estilo cinema, permitindo reserva de assentos e acompanhamento das vendas em tempo real. Originalmente criado como aplicação desktop em C# com MySQL, evoluiu para o ambiente web utilizando PHP, MySQL, HTML, CSS, JavaScript e bibliotecas externas, trazendo flexibilidade, escalabilidade e acesso seguro de qualquer lugar."
+    },
+    {
       titulo: "Sistema de Gestão Acadêmica e Financeira - Studio de Dança Ingrid Soutinho (C# + MySQL)",
       descricao:
         "Esse sistema é uma aplicação desktop desenvolvida em C# com MySQL no Visual Studio, voltada para a gestão acadêmica completa de uma instituição, permitindo o controle de alunos, responsáveis, turmas e mensalidades, além de oferecer recursos financeiros como emissão de relatórios, baixa de pagamentos e exportação para PDF/Excel; também inclui módulos de eventos e espetáculos, com funcionalidades para reservar assentos, confirmar compras, gerenciar ingressos e acompanhar o status das vendas, integrando de forma prática e centralizada todas as operações administrativas, acadêmicas e financeiras em uma única plataforma."

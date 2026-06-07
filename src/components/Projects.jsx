@@ -19,14 +19,19 @@ function Projects() {
         "Esse sistema é uma aplicação desktop desenvolvida em C# com MySQL no Visual Studio, voltada para a gestão acadêmica completa de uma instituição, permitindo o controle de alunos, responsáveis, turmas e mensalidades, além de oferecer recursos financeiros como emissão de relatórios, baixa de pagamentos e exportação para PDF/Excel; também inclui módulos de eventos e espetáculos, com funcionalidades para reservar assentos, confirmar compras, gerenciar ingressos e acompanhar o status das vendas, integrando de forma prática e centralizada todas as operações administrativas, acadêmicas e financeiras em uma única plataforma."
     },
     {
-      titulo: "Gestão de TI - Colégio de Aplicação Ferreira de Almeida",
-      descricao:
-        "Responsável pelo departamento de TI do Colégio de Aplicação Ferreira de Almeida, onde realizo suporte técnico remoto e presencial, incluindo suporte de redes. Gerencio o sistema de segurança com catraca de reconhecimento facial e atuo na melhoria da usabilidade das principais plataformas utilizadas pela instituição, como Positivo On, Sistema de Gestão Escolar completo e agenda digital. Meu trabalho envolve garantir eficiência, segurança e uma experiência tecnológica otimizada para alunos, professores e colaboradores."
-    },
-    {
       titulo: "Sistema de Gestão Escolar – Colégio João Paulo I (C# + MySQL)",
       descricao:
         "Sistema desktop desenvolvido em C# com banco de dados MySQL, criado como projeto de TCC para o Colégio João Paulo I. A aplicação inclui autenticação com múltiplos níveis de acesso (admin, secretaria, professor e aluno), cadastro e gerenciamento de pontuação para competições acadêmicas e esportivas, além de geração automática de relatórios com interface intuitiva e filtros personalizados. O sistema foi projetado para otimizar o acompanhamento das Olimpíadas escolares e centralizar o controle de desempenho dos alunos."
+    },
+    {
+      titulo: "Responsável do site institucional – Colégio de Aplicação Ferreira de Almeida",
+      descricao:
+        "Responsável pela manutenção do site institucional do CAFA. Garantindo que a página permaneça funcional, segura e atualizada"
+    },
+    {
+      titulo: "Gestão de TI - Colégio de Aplicação Ferreira de Almeida",
+      descricao:
+        "Responsável pelo departamento de TI do Colégio de Aplicação Ferreira de Almeida, onde realizo suporte técnico remoto e presencial, incluindo suporte de redes. Gerencio o sistema de segurança com catraca de reconhecimento facial e atuo na melhoria da usabilidade das principais plataformas utilizadas pela instituição, como Positivo On, Sistema de Gestão Escolar completo e agenda digital. Meu trabalho envolve garantir eficiência, segurança e uma experiência tecnológica otimizada para alunos, professores e colaboradores."
     }
   ];
 

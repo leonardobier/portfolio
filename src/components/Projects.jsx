@@ -24,15 +24,15 @@ function Projects() {
         "Sistema desktop desenvolvido em C# com banco de dados MySQL, criado como projeto de TCC para o Colégio João Paulo I. A aplicação inclui autenticação com múltiplos níveis de acesso (admin, secretaria, professor e aluno), cadastro e gerenciamento de pontuação para competições acadêmicas e esportivas, além de geração automática de relatórios com interface intuitiva e filtros personalizados. O sistema foi projetado para otimizar o acompanhamento das Olimpíadas escolares e centralizar o controle de desempenho dos alunos."
     },
     {
+      titulo: "Gestão de TI - Colégio de Aplicação Ferreira de Almeida",
+      descricao:
+        "Responsável pelo departamento de TI do Colégio de Aplicação Ferreira de Almeida, onde realizo suporte técnico remoto e presencial, incluindo suporte de redes. Gerencio o sistema de segurança com catraca de reconhecimento facial e atuo na melhoria da usabilidade das principais plataformas utilizadas pela instituição, como Positivo On, Sistema de Gestão Escolar completo e agenda digital. Meu trabalho envolve garantir eficiência, segurança e uma experiência tecnológica otimizada para alunos, professores e colaboradores."
+    },
+    {
       titulo: "Responsável do site institucional – Colégio de Aplicação Ferreira de Almeida",
       descricao:
         "Responsável pela manutenção do site institucional do CAFA. Garantindo que a página permaneça funcional, segura e atualizada"
     },
-    {
-      titulo: "Gestão de TI - Colégio de Aplicação Ferreira de Almeida",
-      descricao:
-        "Responsável pelo departamento de TI do Colégio de Aplicação Ferreira de Almeida, onde realizo suporte técnico remoto e presencial, incluindo suporte de redes. Gerencio o sistema de segurança com catraca de reconhecimento facial e atuo na melhoria da usabilidade das principais plataformas utilizadas pela instituição, como Positivo On, Sistema de Gestão Escolar completo e agenda digital. Meu trabalho envolve garantir eficiência, segurança e uma experiência tecnológica otimizada para alunos, professores e colaboradores."
-    }
   ];
 
   return (

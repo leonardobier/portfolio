@@ -1,6 +1,7 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaGitAlt } from "react-icons/fa";
-import { SiVite, SiGithub, SiMysql, SiCsharp, SiDotnet, SiVisualstudio, SiVisualstudiocode, SiPhp } from "react-icons/si";
+import { SiVite, SiGithub, SiMysql, SiDotnet, SiPhp } from "react-icons/si";
+import { Icon } from "@iconify/react";
 
 const Techs = () => {
   return (
@@ -18,10 +19,19 @@ const Techs = () => {
         <div className="tech-card"><FaGitAlt className="tech-icon git" /><span>Git</span></div>
         <div className="tech-card"><SiGithub className="tech-icon github" /><span>GitHub</span></div>
         <div className="tech-card"><SiPhp className="tech-icon php" /><span>PHP</span></div>
-        <div className="tech-card"><SiCsharp className="tech-icon csharp-icon" /><span>C#</span></div>
+        <div className="tech-card">
+          <Icon icon="devicon:csharp" className="tech-icon" style={{ fontSize: "3rem" }} />
+          <span>C#</span>
+        </div>
         <div className="tech-card"><SiDotnet className="tech-icon dotnet" /><span>.NET</span></div>
-        <div className="tech-card"><SiVisualstudio className="tech-icon visualstudio" /><span>Visual Studio</span></div>
-        <div className="tech-card"><SiVisualstudiocode className="tech-icon vscode" /><span>VS Code</span></div>
+        <div className="tech-card">
+          <Icon icon="devicon:visualstudio" className="tech-icon" style={{ fontSize: "3rem" }} />
+          <span>Visual Studio</span>
+        </div>
+        <div className="tech-card">
+          <Icon icon="devicon:vscode" className="tech-icon" style={{ fontSize: "3rem" }} />
+          <span>VS Code</span>
+        </div>
       </div>
     </section>
   );

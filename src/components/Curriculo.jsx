@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaDownload } from "react-icons/fa";
+import { FaGithub, FaDownload, FaFilePdf } from "react-icons/fa";
 
 function Curriculo() {
   const [repos, setRepos] = useState([]);
@@ -31,25 +31,26 @@ function Curriculo() {
           </h3>
 
           <motion.a
-          href="/cv/Curriculo-Leonardo.pdf"
-          download="Curriculo-Leonardo.pdf"
-          className="gradient-btn"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-                                    >
-          📄 Currículo (Português)
-        </motion.a>
+            href="/cv/Curriculo-Leonardo.pdf"
+            download="Curriculo-Leonardo.pdf"
+            className="gradient-btn"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaFilePdf style={{ marginRight: "8px", color: "#e63946" }} />
+            Currículo (Português)
+          </motion.a>
 
-        <motion.a
-          href="/cv/Resume-Leonardo.pdf"
-          download="Resume-Leonardo.pdf"
-          className="gradient-btn"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-                                    >
-          📄 Resume (English)
-        </motion.a>
-
+          <motion.a
+            href="/cv/Resume-Leonardo.pdf"
+            download="Resume-Leonardo.pdf"
+            className="gradient-btn"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaFilePdf style={{ marginRight: "8px", color: "#e63946" }} />
+            Resume (English)
+          </motion.a>
         </motion.div>
 
         {/* Bloco da direita - Repositórios */}

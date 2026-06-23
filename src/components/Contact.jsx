@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
+import { FaPaperPlane } from "react-icons/fa";
 
 function Contact() {
   const form = useRef();
@@ -9,13 +10,13 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_6ijdv0l",   // substitua pelo seu Service ID do EmailJS
-        "template_rrpt5yg",  // substitua pelo seu Template ID do EmailJS
+        "service_6ijdv0l",
+        "template_rrpt5yg",
         form.current,
-        "Gx6oyvae9uNKrVtq2" // sua Public Key do EmailJS
+        "Gx6oyvae9uNKrVtq2"
       )
       .then(
-        (result) => {
+        () => {
           alert("Mensagem enviada com sucesso!");
         },
         (error) => {
@@ -38,11 +39,14 @@ function Contact() {
           <label>Mensagem:</label>
           <textarea name="message" rows="5" required />
 
-          <button type="submit">Enviar</button>
+          <button type="submit">
+            <FaPaperPlane style={{ marginRight: "8px" }} />
+            Enviar
+          </button>
         </div>
       </form>
     </section>
   );
 }
 
-export default Contact; 
+export default Contact;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp, FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -13,12 +13,12 @@ function Header() {
 
       {/* Navegação centralizada */}
       <nav className={open ? "nav open" : "nav"}>
-        <a href="#hero">Início</a>
-        <a href="#sobre">Sobre mim</a>
-        <a href="#techs">Tecnologias</a>
-        <a href="#marketing">Soluções</a>
-        <a href="#projects">Projetos</a>
-        <a href="#contact">Contato</a>
+        <a href="#hero" onClick={() => setOpen(false)}>Início</a>
+        <a href="#sobre" onClick={() => setOpen(false)}>Sobre mim</a>
+        <a href="#techs" onClick={() => setOpen(false)}>Tecnologias</a>
+        <a href="#marketing" onClick={() => setOpen(false)}>Soluções</a>
+        <a href="#projects" onClick={() => setOpen(false)}>Projetos</a>
+        <a href="#contact" onClick={() => setOpen(false)}>Contato</a>
       </nav>
 
       {/* Ícones sociais à direita */}
@@ -47,9 +47,9 @@ function Header() {
         </a>
       </div>
 
-      {/* Menu mobile */}
-      <button className="menu-btn" onClick={() => setOpen(!open)}>
-        ☰
+      {/* Menu mobile — ícone alterna entre hambúrguer e X */}
+      <button className="menu-btn" onClick={() => setOpen(!open)} aria-label="Menu">
+        {open ? <FaTimes /> : <FaBars />}
       </button>
     </header>
   );

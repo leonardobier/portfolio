@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaCircle } from "react-icons/fa";
 
 function Hero() {
   return (
@@ -12,10 +13,11 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          ◉ Portfólio em constante evolução
+          <FaCircle style={{ fontSize: "0.5rem", marginRight: "8px", color: "var(--accent)" }} />
+          Portfólio em constante evolução
         </motion.div>
 
-        {/* Título mais atraente */}
+        {/* Título */}
         <motion.h2
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,7 +26,7 @@ function Hero() {
           Desenvolvedor Full-Stack
         </motion.h2>
 
-         <motion.h3
+        <motion.h3
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}

@@ -4,40 +4,34 @@ import { motion } from "framer-motion";
 function Projects() {
   const projetos = [
     {
-      titulo: "Sistema de Gestão Escolar e Esportiva - Colégio João Paulo I (Web)",
+      titulo:
+        "Sistemas de Gestão Acadêmica, Financeira e Esportiva – Soluções Web",
       descricao:
-        "Desenvolvimento de um sistema web hospedado para gestão escolar e esportiva, integrando módulos completos que contemplam a versão para alunos e administradores no acompanhamento de eventos esportivos, um módulo de reservas de assentos e mesas com controle de disponibilidade e relatórios de ocupação, além de um módulo de almoxarifado robusto com registro de movimentações, relatórios em PDF e filtros avançados por período, evento e turma; a solução foi projetada para otimizar processos internos, garantir segurança e usabilidade em diferentes níveis de acesso (aluno, secretaria, admin e almoxarifado) e oferecer uma experiência intuitiva que centraliza em uma única plataforma todas as necessidades de organização escolar e esportiva."
+        "Desenvolvimento e evolução de sistemas de gestão para instituições de ensino e academias, originalmente desenvolvidos em C# com MySQL e posteriormente transformados em aplicações web. As soluções integram módulos acadêmicos, financeiros e administrativos, permitindo o gerenciamento de alunos, responsáveis, professores, turmas e mensalidades, além de recursos para eventos, espetáculos, venda e reserva de ingressos, controle de assentos, almoxarifado, competições esportivas e geração de relatórios em PDF. A migração para o ambiente web ampliou a acessibilidade, flexibilidade e escalabilidade dos sistemas, permitindo que diferentes níveis de usuários, como administradores, secretaria, professores, alunos e responsáveis, utilizem a plataforma de forma segura e centralizada.",
     },
     {
-      titulo: "Sistema de Gestão Acadêmica e Financeira - Studio de Dança Ingrid Soutinho (Web)",
+      titulo: "Help Hub Inc. – Sistema de Gerenciamento de Chamados",
       descricao:
-        "Desenvolvi um sistema web robusto para gestão acadêmica e administrativa de academias e estúdios de dança, reunindo em uma única plataforma o controle de alunos, responsáveis, turmas e mensalidades. A solução inclui recursos financeiros como emissão de relatórios, baixa de pagamentos e exportação para PDF, além de um módulo de espetáculos com venda de ingressos no estilo cinema, permitindo reserva de assentos e acompanhamento das vendas em tempo real. Originalmente criado como aplicação desktop em C# com MySQL, evoluiu para o ambiente web utilizando PHP, MySQL, HTML, CSS, JavaScript e bibliotecas externas, trazendo flexibilidade, escalabilidade e acesso seguro de qualquer lugar."
+        "Desenvolvimento de uma plataforma web de gerenciamento de chamados, criada com o objetivo de organizar e centralizar solicitações de suporte dentro de uma empresa. O sistema possui autenticação e níveis de acesso para administradores, solicitantes e atendentes, permitindo que cada usuário tenha acesso aos recursos correspondentes à sua função. Cada chamado recebe um identificador único, facilitando o acompanhamento e a organização das solicitações desde sua abertura até a resolução. A plataforma permite centralizar os atendimentos, acompanhar o status dos chamados e proporcionar maior controle e organização ao fluxo de suporte da empresa. O projeto foi desenvolvido utilizando a plataforma Lovable, explorando uma abordagem moderna para criação de aplicações web.",
     },
     {
-      titulo: "Sistema de Gestão Acadêmica e Financeira - Studio de Dança Ingrid Soutinho (C# + MySQL)",
+      titulo:
+        "Gestão de TI – Colégio de Aplicação Ferreira de Almeida",
       descricao:
-        "Esse sistema é uma aplicação desktop desenvolvida em C# com MySQL no Visual Studio, voltada para a gestão acadêmica completa de uma instituição, permitindo o controle de alunos, responsáveis, turmas e mensalidades, além de oferecer recursos financeiros como emissão de relatórios, baixa de pagamentos e exportação para PDF/Excel; também inclui módulos de eventos e espetáculos, com funcionalidades para reservar assentos, confirmar compras, gerenciar ingressos e acompanhar o status das vendas, integrando de forma prática e centralizada todas as operações administrativas, acadêmicas e financeiras em uma única plataforma."
+        "Atuação no departamento de TI do Colégio de Aplicação Ferreira de Almeida, realizando suporte técnico remoto e presencial, manutenção e suporte de redes e gerenciamento de recursos tecnológicos da instituição. Responsável também pelo sistema de segurança com catraca de reconhecimento facial e pela melhoria da usabilidade das principais plataformas utilizadas pela instituição, incluindo sistemas de gestão escolar, plataformas educacionais e agenda digital. O trabalho envolve suporte aos usuários, identificação de problemas, manutenção dos recursos tecnológicos e busca contínua por melhorias na eficiência e segurança do ambiente de TI.",
     },
     {
-      titulo: "Sistema de Gestão Escolar – Colégio João Paulo I (C# + MySQL)",
+      titulo:
+        "Responsável pelo Site Institucional – Colégio de Aplicação Ferreira de Almeida",
       descricao:
-        "Sistema desktop desenvolvido em C# com banco de dados MySQL, criado como projeto de TCC para o Colégio João Paulo I. A aplicação inclui autenticação com múltiplos níveis de acesso (admin, secretaria, professor e aluno), cadastro e gerenciamento de pontuação para competições acadêmicas e esportivas, além de geração automática de relatórios com interface intuitiva e filtros personalizados. O sistema foi projetado para otimizar o acompanhamento das Olimpíadas escolares e centralizar o controle de desempenho dos alunos."
-    },
-    {
-      titulo: "Gestão de TI - Colégio de Aplicação Ferreira de Almeida",
-      descricao:
-        "Responsável pelo departamento de TI do Colégio de Aplicação Ferreira de Almeida, onde realizo suporte técnico remoto e presencial, incluindo suporte de redes. Gerencio o sistema de segurança com catraca de reconhecimento facial e atuo na melhoria da usabilidade das principais plataformas utilizadas pela instituição, como Positivo On, Sistema de Gestão Escolar completo e agenda digital. Meu trabalho envolve garantir eficiência, segurança e uma experiência tecnológica otimizada para alunos, professores e colaboradores."
-    },
-    {
-      titulo: "Responsável do site institucional – Colégio de Aplicação Ferreira de Almeida",
-      descricao:
-        "Responsável pela manutenção do site institucional do CAFA. Garantindo que a página permaneça funcional, segura e atualizada"
+        "Responsável pela manutenção e gerenciamento do site institucional do Colégio de Aplicação Ferreira de Almeida, garantindo seu funcionamento adequado, atualização de conteúdos e organização das informações apresentadas aos usuários. O trabalho também envolve a identificação e correção de problemas, buscando manter uma experiência de navegação funcional, segura e atualizada.",
     },
   ];
 
   return (
     <section id="projects" className="section">
       <h2>Experiência e Projetos</h2>
+
       <div
         style={{
           display: "flex",
@@ -69,7 +63,13 @@ function Projects() {
             >
               {proj.titulo}
             </h3>
-            <p style={{ fontSize: "0.95rem", lineHeight: "1.5" }}>
+
+            <p
+              style={{
+                fontSize: "0.95rem",
+                lineHeight: "1.5",
+              }}
+            >
               {proj.descricao}
             </p>
           </motion.div>

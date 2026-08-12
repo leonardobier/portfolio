@@ -1,35 +1,117 @@
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaGitAlt } from "react-icons/fa";
-import { SiVite, SiGithub, SiMysql, SiDotnet, SiPhp } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaPython,
+  FaGitAlt,
+} from "react-icons/fa";
+import {
+  SiVite,
+  SiGithub,
+  SiMysql,
+  SiDotnet,
+  SiPhp,
+  SiTypescript,
+} from "react-icons/si";
 import { Icon } from "@iconify/react";
 
 const Techs = () => {
   return (
     <section id="techs" className="section techs">
       <h2>Tecnologias</h2>
-      <p>Essas são algumas das ferramentas e linguagens que utilizo no meu dia a dia:</p>
+
+      <p>
+        Essas são algumas das ferramentas e linguagens que utilizo no meu dia
+        a dia:
+      </p>
+
       <div className="tech-grid">
-        <div className="tech-card"><FaHtml5 className="tech-icon html" /><span>HTML5</span></div>
-        <div className="tech-card"><FaCss3Alt className="tech-icon css" /><span>CSS3</span></div>
-        <div className="tech-card"><FaJs className="tech-icon js" /><span>JavaScript</span></div>
-        <div className="tech-card"><FaReact className="tech-icon react" /><span>React</span></div>
-        <div className="tech-card"><SiVite className="tech-icon vite" /><span>Vite</span></div>
-        <div className="tech-card"><FaPython className="tech-icon python" /><span>Python</span></div>
-        <div className="tech-card"><SiMysql className="tech-icon mysql" /><span>MySQL</span></div>
-        <div className="tech-card"><FaGitAlt className="tech-icon git" /><span>Git</span></div>
-        <div className="tech-card"><SiGithub className="tech-icon github" /><span>GitHub</span></div>
-        <div className="tech-card"><SiPhp className="tech-icon php" /><span>PHP</span></div>
         <div className="tech-card">
-          <Icon icon="devicon:csharp" className="tech-icon" style={{ fontSize: "3rem" }} />
+          <FaHtml5 className="tech-icon html" />
+          <span>HTML5</span>
+        </div>
+
+        <div className="tech-card">
+          <FaCss3Alt className="tech-icon css" />
+          <span>CSS3</span>
+        </div>
+
+        <div className="tech-card">
+          <FaJs className="tech-icon js" />
+          <span>JavaScript</span>
+        </div>
+
+        <div className="tech-card">
+          <SiTypescript className="tech-icon typescript" />
+          <span>TypeScript</span>
+        </div>
+
+        <div className="tech-card">
+          <FaReact className="tech-icon react" />
+          <span>React</span>
+        </div>
+
+        <div className="tech-card">
+          <SiVite className="tech-icon vite" />
+          <span>Vite</span>
+        </div>
+
+        <div className="tech-card">
+          <FaPython className="tech-icon python" />
+          <span>Python</span>
+        </div>
+
+        <div className="tech-card">
+          <SiMysql className="tech-icon mysql" />
+          <span>MySQL</span>
+        </div>
+
+        <div className="tech-card">
+          <FaGitAlt className="tech-icon git" />
+          <span>Git</span>
+        </div>
+
+        <div className="tech-card">
+          <SiGithub className="tech-icon github" />
+          <span>GitHub</span>
+        </div>
+
+        <div className="tech-card">
+          <SiPhp className="tech-icon php" />
+          <span>PHP</span>
+        </div>
+
+        <div className="tech-card">
+          <Icon
+            icon="devicon:csharp"
+            className="tech-icon"
+            style={{ fontSize: "3rem" }}
+          />
           <span>C#</span>
         </div>
-        <div className="tech-card"><SiDotnet className="tech-icon dotnet" /><span>.NET</span></div>
+
         <div className="tech-card">
-          <Icon icon="devicon:visualstudio" className="tech-icon" style={{ fontSize: "3rem" }} />
+          <SiDotnet className="tech-icon dotnet" />
+          <span>.NET</span>
+        </div>
+
+        <div className="tech-card">
+          <Icon
+            icon="devicon:visualstudio"
+            className="tech-icon"
+            style={{ fontSize: "3rem" }}
+          />
           <span>Visual Studio</span>
         </div>
+
         <div className="tech-card">
-          <Icon icon="devicon:vscode" className="tech-icon" style={{ fontSize: "3rem" }} />
+          <Icon
+            icon="devicon:vscode"
+            className="tech-icon"
+            style={{ fontSize: "3rem" }}
+          />
           <span>VS Code</span>
         </div>
       </div>

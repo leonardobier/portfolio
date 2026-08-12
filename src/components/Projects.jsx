@@ -5,27 +5,33 @@ function Projects() {
   const projetos = [
     {
       titulo:
-        "Sistemas de Gestão Acadêmica, Financeira e Esportiva – Soluções Web",
+        "Sistema de Gestão Acadêmica e Financeira – Studio de Dança Ingrid Soutinho (Web)",
       descricao:
-        "Desenvolvimento e evolução de sistemas de gestão para instituições de ensino e academias, originalmente desenvolvidos em C# com MySQL e posteriormente transformados em aplicações web. As soluções integram módulos acadêmicos, financeiros e administrativos, permitindo o gerenciamento de alunos, responsáveis, professores, turmas e mensalidades, além de recursos para eventos, espetáculos, venda e reserva de ingressos, controle de assentos, almoxarifado, competições esportivas e geração de relatórios em PDF. A migração para o ambiente web ampliou a acessibilidade, flexibilidade e escalabilidade dos sistemas, permitindo que diferentes níveis de usuários, como administradores, secretaria, professores e alunos, utilizem a plataforma de forma segura e centralizada.",
+        "Desenvolvimento e evolução de uma plataforma web completa para gestão acadêmica, financeira e administrativa de uma instituição de ensino. O sistema centraliza o gerenciamento de alunos, responsáveis, professores, turmas e mensalidades, além de disponibilizar recursos para controle de pagamentos, relatórios, baixa financeira e exportação de documentos em PDF. A plataforma também conta com módulos para espetáculos e eventos, incluindo venda de ingressos, reserva de assentos e acompanhamento das vendas. Como evolução do projeto, foi desenvolvido o Portal do Responsável, permitindo que responsáveis acompanhem informações acadêmicas e financeiras dos alunos e realizem o pagamento de mensalidades diretamente pela plataforma, proporcionando mais praticidade, autonomia e agilidade no processo financeiro. O sistema foi originalmente desenvolvido em C# com MySQL e posteriormente transformado em uma aplicação web utilizando PHP, MySQL, HTML, CSS e JavaScript.",
+    },
+    {
+      titulo:
+        "Sistema de Pontuação e Olimpíadas Escolares – Colégio João Paulo I",
+      descricao:
+        "Desenvolvimento de um sistema voltado para o gerenciamento de competições e olimpíadas escolares, permitindo centralizar o acompanhamento da pontuação e do desempenho dos alunos durante os eventos. A plataforma possui diferentes níveis de acesso, incluindo administrador, secretaria, professor e aluno, além de recursos para cadastro e gerenciamento das equipes, modalidades e resultados. O sistema permite registrar pontuações, acompanhar o ranking das equipes e gerar relatórios, facilitando a organização das competições e proporcionando uma visualização clara do desempenho dos participantes. Originalmente desenvolvido como projeto de TCC em C# com MySQL, o sistema posteriormente evoluiu para uma solução web, ampliando sua acessibilidade e utilização no ambiente escolar.",
     },
     {
       titulo: "NextHelp – Sistema de Gerenciamento de Chamados",
       descricao:
-        "Desenvolvimento de uma plataforma web de gerenciamento de chamados, criada com o objetivo de organizar e centralizar solicitações de suporte dentro de uma empresa. O sistema possui autenticação e níveis de acesso para administradores, solicitantes e atendentes, permitindo que cada usuário tenha acesso aos recursos correspondentes à sua função. Cada chamado recebe um identificador único, facilitando o acompanhamento e a organização das solicitações desde sua abertura até a resolução. A plataforma permite centralizar os atendimentos, acompanhar o status dos chamados e proporcionar maior controle e organização ao fluxo de suporte da empresa. O projeto foi desenvolvido utilizando a plataforma Lovable, explorando uma abordagem moderna para criação de aplicações web.",
+        "Desenvolvimento de uma plataforma web de gerenciamento de chamados, criada para organizar e centralizar solicitações de suporte dentro de uma empresa. O sistema possui autenticação e níveis de acesso para administradores, solicitantes e atendentes, permitindo que cada usuário tenha acesso aos recursos correspondentes à sua função. Cada chamado recebe um identificador único, facilitando seu acompanhamento desde a abertura até a resolução. A plataforma permite centralizar os atendimentos, acompanhar o status das solicitações e proporcionar maior controle e organização ao fluxo de suporte. O projeto foi desenvolvido utilizando a plataforma Lovable.",
       link: "https://nexthelp.lovable.app",
     },
     {
       titulo:
         "Gestão de TI – Colégio de Aplicação Ferreira de Almeida",
       descricao:
-        "Atuação no departamento de TI do Colégio de Aplicação Ferreira de Almeida, realizando suporte técnico remoto e presencial, manutenção e suporte de redes e gerenciamento de recursos tecnológicos da instituição. Responsável também pelo sistema de segurança com catraca de reconhecimento facial e pela melhoria da usabilidade das principais plataformas utilizadas pela instituição, incluindo sistemas de gestão escolar, plataformas educacionais e agenda digital. O trabalho envolve suporte aos usuários, identificação de problemas, manutenção dos recursos tecnológicos e busca contínua por melhorias na eficiência e segurança do ambiente de TI.",
+        "Atuação no departamento de TI do Colégio de Aplicação Ferreira de Almeida, realizando suporte técnico remoto e presencial, manutenção e suporte de redes e gerenciamento de recursos tecnológicos da instituição. Responsável também pelo sistema de segurança com catraca de reconhecimento facial e pela melhoria da usabilidade das principais plataformas utilizadas pela instituição, incluindo sistemas de gestão escolar, plataformas educacionais e agenda digital. O trabalho envolve suporte aos usuários, identificação e resolução de problemas e busca contínua por melhorias na eficiência e segurança do ambiente tecnológico.",
     },
     {
       titulo:
         "Responsável pelo Site Institucional – Colégio de Aplicação Ferreira de Almeida",
       descricao:
-        "Responsável pela manutenção e gerenciamento do site institucional do Colégio de Aplicação Ferreira de Almeida, garantindo seu funcionamento adequado, atualização de conteúdos e organização das informações apresentadas aos usuários. O trabalho também envolve a identificação e correção de problemas, buscando manter uma experiência de navegação funcional, segura e atualizada.",
+        "Responsável pela manutenção e gerenciamento do site institucional do Colégio de Aplicação Ferreira de Almeida, garantindo seu funcionamento adequado, atualização de conteúdos e organização das informações apresentadas aos usuários. O trabalho também envolve identificação e correção de problemas, manutenção da estrutura do site e busca contínua por melhorias na experiência de navegação.",
     },
   ];
 

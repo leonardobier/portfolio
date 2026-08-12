@@ -5,7 +5,7 @@ function Projects() {
   const projetos = [
     {
       titulo:
-        "Sistema de Gestão Acadêmica e Financeira – Studio de Dança Ingrid Soutinho (Web)",
+        "Sistema de Gestão Acadêmica e Financeira – Studio de Dança Ingrid Soutinho",
       descricao:
         "Desenvolvimento e evolução de uma plataforma web completa para gestão acadêmica, financeira e administrativa de uma instituição de ensino. O sistema centraliza o gerenciamento de alunos, responsáveis, professores, turmas e mensalidades, além de disponibilizar recursos para controle de pagamentos, relatórios, baixa financeira e exportação de documentos em PDF. A plataforma também conta com módulos para espetáculos e eventos, incluindo venda de ingressos, reserva de assentos e acompanhamento das vendas. Como evolução do projeto, foi desenvolvido o Portal do Responsável, permitindo que responsáveis acompanhem informações acadêmicas e financeiras dos alunos e realizem o pagamento de mensalidades diretamente pela plataforma, proporcionando mais praticidade, autonomia e agilidade no processo financeiro. O sistema foi originalmente desenvolvido em C# com MySQL e posteriormente transformado em uma aplicação web utilizando PHP, MySQL, HTML, CSS e JavaScript.",
     },

@@ -6,7 +6,7 @@ function Sobre() {
       <div className="container">
         <h2>Sobre Mim</h2>
         <p>
-          Tenho 18 anos e sou <strong>Desenvolvedor Full-Stack</strong>, Técnico em Informática e
+          Sou <strong>Desenvolvedor Full-Stack</strong>, Técnico em Informática e
           entusiasta de Inteligência Artificial. Participei da criação de sistemas de gestão e suporte em TI,
           aplicando boas práticas de programação, banco de dados e integração de tecnologias modernas.
         </p>

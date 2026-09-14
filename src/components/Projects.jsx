@@ -24,8 +24,7 @@ function Projects() {
     {
       titulo: "NextFlowChat – SaaS de Atendimento e Automação via WhatsApp",
       descricao:
-        "Desenvolvimento de uma plataforma SaaS multiempresa voltada para gerenciamento, automação e organização de atendimentos via WhatsApp. O sistema permite que diferentes empresas utilizem ambientes independentes, com controle de acesso para administradores e colaboradores, conexão com o WhatsApp por QR Code e gerenciamento de contatos. A plataforma conta com fluxos de atendimento personalizáveis, permitindo configurar mensagens automáticas, menus, opções de atendimento e encaminhamento para atendentes quando necessário. O projeto foi desenvolvido com foco em automação de processos, organização do atendimento, escalabilidade e experiência do usuário.",
-        link: "https://nextflowchat.lovable.app",
+        "Desenvolvimento de uma plataforma SaaS multiempresa voltada para gerenciamento, automação e organização de atendimentos via WhatsApp. O sistema permite que diferentes empresas utilizem ambientes independentes, com controle de acesso para administradores e colaboradores, conexão com o WhatsApp por QR Code e gerenciamento de contatos. A plataforma conta com fluxos de atendimento personalizáveis, permitindo configurar mensagens automáticas, menus, opções de atendimento e encaminhamento para atendentes quando necessário. O projeto foi desenvolvido em PHP, HTML e CSS, com foco em automação de processos, organização do atendimento, escalabilidade e experiência do usuário, apresentando uma arquitetura modular de fácil implantação e integração a sistemas pré-existentes.",
     },
     {
       titulo:

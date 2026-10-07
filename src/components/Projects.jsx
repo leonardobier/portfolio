@@ -41,11 +41,6 @@ function Projects() {
         "Sistema de gerenciamento de competições escolares, centralizando o acompanhamento de pontuações, equipes e modalidades esportivas. Possui múltiplos níveis de acesso (admin, secretaria, professor e aluno) e recursos para registrar resultados, rankings e controle de almoxarifado. Originalmente construído em C# com MySQL, o projeto evoluiu para uma solução web para maior acessibilidade.",
     },
     {
-      titulo: "Gestão de TI – Colégio de Aplicação Ferreira de Almeida",
-      descricao:
-        "Atuação no departamento de TI, prestando suporte técnico aos usuários, manutenção de redes e gestão da infraestrutura tecnológica. Inclui a administração do sistema de segurança com reconhecimento facial e a melhoria de usabilidade das plataformas institucionais e sistemas de gestão escolar.",
-    },
-    {
       titulo: "Responsável pelo Site Institucional – CAFA",
       descricao:
         "Gerenciamento de hospedagem e manutenção do site institucional do Colégio de Aplicação Ferreira de Almeida. Responsável pela atualização de conteúdos, correções estruturais, resolução de problemas e busca contínua por melhorias na experiência de navegação (UX) e usabilidade da plataforma.",

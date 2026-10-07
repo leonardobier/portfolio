@@ -7,6 +7,7 @@ function Projects() {
       titulo: "NextFlowChat – SaaS de Atendimento e Automação via WhatsApp",
       descricao:
         "Plataforma SaaS multiempresa de automação e chatbot, desenvolvida em TypeScript e banco de dados PostgreSQL. O sistema possui layout totalmente responsivo e fluido, permitindo que diferentes empresas utilizem ambientes independentes. Conta com conexão via QR Code, gestão de contatos e criação de fluxos automáticos de mensagens totalmente personalizáveis, oferecendo atendimento via bot com transição inteligente para atendentes humanos.",
+        link: "https://nextflow.leenicorporation.com.br",
     },
     {
       titulo: "NextFinances – Controle Financeiro Inteligente",

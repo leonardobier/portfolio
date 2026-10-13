@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -14,106 +15,102 @@ import {
   SiDotnet,
   SiPhp,
   SiTypescript,
+  SiPostgresql,
 } from "react-icons/si";
 import { Icon } from "@iconify/react";
 
+const allTechs = [
+  // Frontend
+  { name: "React", category: "frontend", icon: <FaReact className="tech-icon react" />, badge: "Frontend Core" },
+  { name: "TypeScript", category: "frontend", icon: <SiTypescript className="tech-icon typescript" />, badge: "Tipagem & Escalabilidade" },
+  { name: "JavaScript", category: "frontend", icon: <FaJs className="tech-icon js" />, badge: "ES6+ Moderno" },
+  { name: "HTML5", category: "frontend", icon: <FaHtml5 className="tech-icon html" />, badge: "Semântica & Acessibilidade" },
+  { name: "CSS3", category: "frontend", icon: <FaCss3Alt className="tech-icon css" />, badge: "Layout & Responsividade" },
+  { name: "Vite", category: "frontend", icon: <SiVite className="tech-icon vite" />, badge: "Build Tool Rápido" },
+
+  // Backend & Bancos
+  { name: "C#", category: "backend", icon: <Icon icon="devicon:csharp" className="tech-icon" style={{ fontSize: "2.8rem" }} />, badge: "Desktop & Backend" },
+  { name: ".NET", category: "backend", icon: <SiDotnet className="tech-icon dotnet" />, badge: "Framework Robusto" },
+  { name: "PHP", category: "backend", icon: <SiPhp className="tech-icon php" />, badge: "Web & APIs" },
+  { name: "Python", category: "backend", icon: <FaPython className="tech-icon python" />, badge: "Automação & Scripts" },
+  { name: "MySQL", category: "backend", icon: <SiMysql className="tech-icon mysql" />, badge: "Relacional & Consultas" },
+  { name: "PostgreSQL", category: "backend", icon: <SiPostgresql className="tech-icon postgres" />, badge: "SaaS & Dados" },
+
+  // Ferramentas & Desktop
+  { name: "Git", category: "tools", icon: <FaGitAlt className="tech-icon git" />, badge: "Versionamento" },
+  { name: "GitHub", category: "tools", icon: <SiGithub className="tech-icon github" />, badge: "CI/CD & Repos" },
+  { name: "VS Code", category: "tools", icon: <Icon icon="devicon:vscode" className="tech-icon" style={{ fontSize: "2.8rem" }} />, badge: "Ambiente Principal" },
+  { name: "Visual Studio", category: "tools", icon: <Icon icon="devicon:visualstudio" className="tech-icon" style={{ fontSize: "2.8rem" }} />, badge: "Dev C# / Desktop" },
+];
+
+const categories = [
+  { id: "all", label: "Todas" },
+  { id: "frontend", label: "Frontend" },
+  { id: "backend", label: "Backend & Dados" },
+  { id: "tools", label: "Ferramentas & IDEs" },
+];
+
 const Techs = () => {
+  const [activeCategory, setActiveCategory] = useState("all");
+
+  const filteredTechs = activeCategory === "all"
+    ? allTechs
+    : allTechs.filter((tech) => tech.category === activeCategory);
+
   return (
     <section id="techs" className="section techs">
-      <h2>Tecnologias</h2>
+      <div className="container">
+        <motion.div
+          className="section-header"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <span className="section-eyebrow">Stack Tecnológica</span>
+          <h2>Tecnologias & Ferramentas</h2>
+          <div className="section-divider" />
+          <p className="section-subtitle">
+            Ferramentas, linguagens e bancos de dados que utilizo para projetar e construir soluções digitais de ponta a ponta:
+          </p>
+        </motion.div>
 
-      <p>
-        Essas são algumas das ferramentas e linguagens que utilizo no meu dia
-        a dia:
-      </p>
-
-      <div className="tech-grid">
-        <div className="tech-card">
-          <FaHtml5 className="tech-icon html" />
-          <span>HTML5</span>
+        {/* Abas de filtro */}
+        <div className="tech-filter-tabs">
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              className={`tech-filter-btn ${activeCategory === cat.id ? "active" : ""}`}
+              onClick={() => setActiveCategory(cat.id)}
+            >
+              {cat.label}
+            </button>
+          ))}
         </div>
 
-        <div className="tech-card">
-          <FaCss3Alt className="tech-icon css" />
-          <span>CSS3</span>
-        </div>
-
-        <div className="tech-card">
-          <FaJs className="tech-icon js" />
-          <span>JavaScript</span>
-        </div>
-
-        <div className="tech-card">
-          <SiTypescript className="tech-icon typescript" />
-          <span>TypeScript</span>
-        </div>
-
-        <div className="tech-card">
-          <FaReact className="tech-icon react" />
-          <span>React</span>
-        </div>
-
-        <div className="tech-card">
-          <SiVite className="tech-icon vite" />
-          <span>Vite</span>
-        </div>
-
-        <div className="tech-card">
-          <FaPython className="tech-icon python" />
-          <span>Python</span>
-        </div>
-
-        <div className="tech-card">
-          <SiMysql className="tech-icon mysql" />
-          <span>MySQL</span>
-        </div>
-
-        <div className="tech-card">
-          <FaGitAlt className="tech-icon git" />
-          <span>Git</span>
-        </div>
-
-        <div className="tech-card">
-          <SiGithub className="tech-icon github" />
-          <span>GitHub</span>
-        </div>
-
-        <div className="tech-card">
-          <SiPhp className="tech-icon php" />
-          <span>PHP</span>
-        </div>
-
-        <div className="tech-card">
-          <Icon
-            icon="devicon:csharp"
-            className="tech-icon"
-            style={{ fontSize: "3rem" }}
-          />
-          <span>C#</span>
-        </div>
-
-        <div className="tech-card">
-          <SiDotnet className="tech-icon dotnet" />
-          <span>.NET</span>
-        </div>
-
-        <div className="tech-card">
-          <Icon
-            icon="devicon:visualstudio"
-            className="tech-icon"
-            style={{ fontSize: "3rem" }}
-          />
-          <span>Visual Studio</span>
-        </div>
-
-        <div className="tech-card">
-          <Icon
-            icon="devicon:vscode"
-            className="tech-icon"
-            style={{ fontSize: "3rem" }}
-          />
-          <span>VS Code</span>
-        </div>
+        {/* Grid animado de tecnologias */}
+        <motion.div className="tech-grid" layout>
+          <AnimatePresence>
+            {filteredTechs.map((tech) => (
+              <motion.div
+                key={tech.name}
+                className="tech-card"
+                layout
+                initial={{ opacity: 0, scale: 0.85 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.85 }}
+                transition={{ duration: 0.3 }}
+                whileHover={{ y: -6, scale: 1.04 }}
+              >
+                <div className="tech-icon-container">
+                  {tech.icon}
+                </div>
+                <span className="tech-name">{tech.name}</span>
+                <span className="tech-badge">{tech.badge}</span>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
       </div>
     </section>
   );

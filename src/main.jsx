@@ -10,13 +10,14 @@ root.render(
   </React.StrictMode>
 );
 
-// 🔵 Criar o elemento da bola gradiente
-const cursor = document.createElement("div");
-cursor.classList.add("cursor-gradient");
-document.body.appendChild(cursor);
+// Gradiente suave que segue o mouse apenas em dispositivos com cursor preciso (desktop)
+if (window.matchMedia("(pointer: fine)").matches) {
+  const cursor = document.createElement("div");
+  cursor.classList.add("cursor-gradient");
+  document.body.appendChild(cursor);
 
-// 🔄 Atualizar posição conforme o mouse se move
-document.addEventListener("mousemove", (e) => {
-  cursor.style.left = `${e.clientX}px`;
-  cursor.style.top = `${e.clientY}px`;
-});
+  window.addEventListener("mousemove", (e) => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+  }, { passive: true });
+}

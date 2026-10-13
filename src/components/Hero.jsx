@@ -1,80 +1,119 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaCircle } from "react-icons/fa";
+import { FaCode, FaRocket, FaFileDownload, FaEnvelope, FaChevronDown } from "react-icons/fa";
 
 function Hero() {
   return (
     <section id="hero" className="hero">
+      <div className="hero-background-glow" />
       <div className="overlay">
-        {/* Selo informativo */}
+        {/* Selo informativo com pulso */}
         <motion.div
           className="hero-badge"
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.8 }}
         >
-          <FaCircle style={{ fontSize: "0.5rem", marginRight: "8px", color: "var(--accent)" }} />
-          Portfólio em constante evolução
+          <span className="pulse-dot" />
+          Disponível para novos projetos e contratação
         </motion.div>
 
-        {/* Título */}
-        <motion.h2
-          initial={{ opacity: 0, y: -50 }}
+        {/* Título Principal */}
+        <motion.h1
+          className="hero-title"
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Desenvolvedor Full-Stack
-        </motion.h2>
+          Desenvolvedor <span className="gradient-text">Full-Stack</span> & Soluções Digitais
+        </motion.h1>
 
-        <motion.h3
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          Criando Experiências Digitais Inovadoras
-        </motion.h3>
-
+        {/* Subtítulo */}
         <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
+          className="hero-subtitle"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.35 }}
         >
-          Desenvolvedor Web e Desktop | Estudante de Análise e Desenvolvimento de Sistemas | Técnico em Informática
+          Especialista no desenvolvimento de plataformas SaaS, automações inteligentes para WhatsApp,
+          sistemas Web modernos (React, TypeScript, PHP) e aplicações Desktop de alta performance (C#, .NET, MySQL).
         </motion.p>
+
+        {/* Quick Highlights / Stats */}
+        <motion.div
+          className="hero-stats"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
+          <div className="stat-pill">
+            <span className="stat-icon"><FaCode /></span>
+            <div>
+              <strong>Web & Desktop</strong>
+              <small>Ecossistema Completo</small>
+            </div>
+          </div>
+          <div className="stat-pill">
+            <span className="stat-icon"><FaRocket /></span>
+            <div>
+              <strong>8+ Soluções</strong>
+              <small>Projetos & Sistemas Reais</small>
+            </div>
+          </div>
+          <div className="stat-pill">
+            <span className="stat-icon"><FaCode /></span>
+            <div>
+              <strong>SaaS & IA</strong>
+              <small>Automação & Finanças</small>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Botões principais */}
         <motion.div
           className="hero-buttons"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.65 }}
         >
           <motion.button
-            className="gradient-btn"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => document.getElementById("projects").scrollIntoView()}
+            className="hero-btn primary-btn"
+            whileHover={{ scale: 1.04, y: -2 }}
+            whileTap={{ scale: 0.96 }}
+            onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Ver Portfólio
+            <FaCode /> Ver Projetos
           </motion.button>
 
           <motion.button
-            className="gradient-btn"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => document.getElementById("curriculo").scrollIntoView()}
+            className="hero-btn secondary-btn"
+            whileHover={{ scale: 1.04, y: -2 }}
+            whileTap={{ scale: 0.96 }}
+            onClick={() => document.getElementById("curriculo")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Ver Currículos
+            <FaFileDownload /> Ver Currículos
           </motion.button>
 
           <motion.button
-            className="gradient-btn"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => document.getElementById("contact").scrollIntoView()}
+            className="hero-btn tertiary-btn"
+            whileHover={{ scale: 1.04, y: -2 }}
+            whileTap={{ scale: 0.96 }}
+            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Fale comigo
+            <FaEnvelope /> Fale Comigo
           </motion.button>
+        </motion.div>
+
+        {/* Indicador de scroll suave */}
+        <motion.div
+          className="hero-scroll-indicator"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.7, y: [0, 8, 0] }}
+          transition={{ delay: 1, duration: 2, repeat: Infinity }}
+          onClick={() => document.getElementById("sobre")?.scrollIntoView({ behavior: "smooth" })}
+        >
+          <span>Role para explorar</span>
+          <FaChevronDown />
         </motion.div>
       </div>
     </section>

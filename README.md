@@ -5,7 +5,7 @@
 ---
 
 ## 🌐 Demonstração Online
-- **Site**: [leonardobier.github.io/portfolio](https://leonardobier.github.io/portfolio) *(ou domínio customizado)*
+- **Site**: [leonardobier.vercel.app](https://leonardobier.vercel.app)
 - **LinkedIn**: [linkedin.com/in/leonardolagebier](https://www.linkedin.com/in/leonardolagebier)
 - **WhatsApp**: [+55 (21) 99849-2427](https://wa.me/5521998492427)
 

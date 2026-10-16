@@ -28,7 +28,15 @@ function Header() {
       {/* Nome e Branding à esquerda */}
       <div className="profile">
         <a href="#hero" className="brand-link">
-          <span className="brand-logo-circle">L</span>
+          <img
+            src="/imgs/perfil.png"
+            alt="Leonardo Bier"
+            className="brand-avatar"
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = "/imgs/profile.png";
+            }}
+          />
           <span className="brand-name">
             Leonardo <span className="brand-accent">Bier</span>
           </span>

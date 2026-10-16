@@ -169,6 +169,22 @@ body {
   text-decoration: none;
 }
 
+.brand-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.brand-link:hover .brand-avatar,
+.footer-brand:hover .brand-avatar {
+  transform: scale(1.08);
+  box-shadow: 0 0 16px var(--accent);
+}
+
 .brand-logo-circle {
   width: 36px;
   height: 36px;

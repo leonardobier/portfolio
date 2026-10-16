@@ -11,7 +11,15 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-brand">
-            <span className="brand-logo-circle">L</span>
+            <img
+              src="/imgs/perfil.png"
+              alt="Leonardo Bier"
+              className="brand-avatar"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "/imgs/profile.png";
+              }}
+            />
             <div>
               <h3>Leonardo Lage Bier</h3>
               <p>Desenvolvedor Full-Stack • Soluções Web & Desktop</p>

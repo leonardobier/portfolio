@@ -844,6 +844,10 @@ body {
 .tech-icon.github { color: #ffffff; }
 .tech-icon.php { color: #777bb4; }
 .tech-icon.dotnet { color: #512bd4; }
+.tech-icon.nextjs { color: #ffffff; }
+.tech-icon.tailwind { color: #38bdf8; }
+.tech-icon.prisma { color: #38bdf8; }
+.tech-icon.electron { color: #9feaf9; }
 
 /* ==========================================================================
    💡 MARKETING / SERVIÇOS
@@ -1081,24 +1085,64 @@ body {
   padding-top: 1.25rem;
 }
 
+.project-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+}
+
 .project-live-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  width: 100%;
-  padding: 0.75rem 1.25rem;
+  flex: 1;
+  padding: 0.75rem 1rem;
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 700;
   text-decoration: none;
   border-radius: var(--radius-md);
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 
 .project-live-btn:hover {
   box-shadow: 0 4px 16px rgba(56, 189, 248, 0.4);
+  transform: translateY(-2px);
+}
+
+.project-github-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.project-github-btn.full-width {
+  flex: 1;
+  width: 100%;
+  background: rgba(56, 189, 248, 0.08);
+  border-color: rgba(56, 189, 248, 0.3);
+  color: var(--accent);
+}
+
+.project-github-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--border-hover);
+  color: #fff;
   transform: translateY(-2px);
 }
 
@@ -1109,6 +1153,7 @@ body {
   color: var(--text-muted);
   font-style: italic;
   padding: 0.5rem 0;
+  width: 100%;
 }
 
 /* ==========================================================================

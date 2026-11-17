@@ -56,7 +56,7 @@ function Hero() {
           <div className="stat-pill">
             <span className="stat-icon"><FaRocket /></span>
             <div>
-              <strong>8+ Soluções</strong>
+              <strong>15+ Soluções</strong>
               <small>Projetos & Sistemas Reais</small>
             </div>
           </div>

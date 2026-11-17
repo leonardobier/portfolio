@@ -16,14 +16,20 @@ import {
   SiPhp,
   SiTypescript,
   SiPostgresql,
+  SiTailwindcss,
+  SiPrisma,
+  SiNextdotjs,
+  SiElectron,
 } from "react-icons/si";
 import { Icon } from "@iconify/react";
 
 const allTechs = [
   // Frontend
   { name: "React", category: "frontend", icon: <FaReact className="tech-icon react" />, badge: "Frontend Core" },
+  { name: "Next.js", category: "frontend", icon: <SiNextdotjs className="tech-icon nextjs" />, badge: "SSR & Fullstack" },
   { name: "TypeScript", category: "frontend", icon: <SiTypescript className="tech-icon typescript" />, badge: "Tipagem & Escalabilidade" },
   { name: "JavaScript", category: "frontend", icon: <FaJs className="tech-icon js" />, badge: "ES6+ Moderno" },
+  { name: "Tailwind CSS", category: "frontend", icon: <SiTailwindcss className="tech-icon tailwind" />, badge: "Utility-First CSS" },
   { name: "HTML5", category: "frontend", icon: <FaHtml5 className="tech-icon html" />, badge: "Semântica & Acessibilidade" },
   { name: "CSS3", category: "frontend", icon: <FaCss3Alt className="tech-icon css" />, badge: "Layout & Responsividade" },
   { name: "Vite", category: "frontend", icon: <SiVite className="tech-icon vite" />, badge: "Build Tool Rápido" },
@@ -33,10 +39,12 @@ const allTechs = [
   { name: ".NET", category: "backend", icon: <SiDotnet className="tech-icon dotnet" />, badge: "Framework Robusto" },
   { name: "PHP", category: "backend", icon: <SiPhp className="tech-icon php" />, badge: "Web & APIs" },
   { name: "Python", category: "backend", icon: <FaPython className="tech-icon python" />, badge: "Automação & Scripts" },
+  { name: "Prisma ORM", category: "backend", icon: <SiPrisma className="tech-icon prisma" />, badge: "Modelagem & Type-Safe" },
   { name: "MySQL", category: "backend", icon: <SiMysql className="tech-icon mysql" />, badge: "Relacional & Consultas" },
   { name: "PostgreSQL", category: "backend", icon: <SiPostgresql className="tech-icon postgres" />, badge: "SaaS & Dados" },
 
   // Ferramentas & Desktop
+  { name: "Electron", category: "tools", icon: <SiElectron className="tech-icon electron" />, badge: "Aplicações Desktop" },
   { name: "Git", category: "tools", icon: <FaGitAlt className="tech-icon git" />, badge: "Versionamento" },
   { name: "GitHub", category: "tools", icon: <SiGithub className="tech-icon github" />, badge: "CI/CD & Repos" },
   { name: "VS Code", category: "tools", icon: <Icon icon="devicon:vscode" className="tech-icon" style={{ fontSize: "2.8rem" }} />, badge: "Ambiente Principal" },

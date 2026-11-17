@@ -23,7 +23,7 @@ const fallbackRepos = [
     id: 2,
     name: "nextparty",
     html_url: "https://github.com/leonardobier/nextparty",
-    description: "Plataforma web para buffets infantis com agendamento inteligente em Next.js e Prisma.",
+    description: "Sistema web de gerenciamento de reservas e salão de festas em Next.js e Prisma.",
     language: "TypeScript",
     stargazers_count: 0,
   },

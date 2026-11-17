@@ -38,11 +38,11 @@ function Projects() {
       destaque: true,
     },
     {
-      titulo: "NextParty Kids – Plataforma de Gestão & Buffet Infantil",
+      titulo: "NextParty – Sistema de Gestão e Reservas para Salão de Festas",
       categoria: "saas",
       badge: "SaaS & Eventos",
       descricao:
-        "Solução web completa para buffets e casas de festas infantis. Combina Landing Page de alta conversão para famílias (atrações, cardápios e galeria interativa), Portal dos Pais com acompanhamento em tempo real e Painel Administrativo com motor de agendamento que previne conflitos de datas no backend.",
+        "Sistema web completo de gerenciamento de reservas, datas e operações de salão de festas e eventos. Combina portal institucional de alta conversão para clientes, painel administrativo centralizado com motor de agendamento em tempo real que previne conflitos de datas no backend, e área do cliente para acompanhamento do evento.",
       tags: ["Next.js", "React", "TypeScript", "Prisma ORM", "PostgreSQL", "Tailwind CSS"],
       github: "https://github.com/leonardobier/nextparty",
       destaque: true,

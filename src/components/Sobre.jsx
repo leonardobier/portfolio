@@ -1,6 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGraduationCap, FaMapMarkerAlt, FaLaptopCode, FaCheckCircle } from "react-icons/fa";
+import {
+  FaGraduationCap,
+  FaMapMarkerAlt,
+  FaLaptopCode,
+  FaCheckCircle,
+  FaLayerGroup,
+  FaSyncAlt,
+  FaCogs,
+} from "react-icons/fa";
 
 function Sobre() {
   const highlights = [
@@ -8,6 +16,27 @@ function Sobre() {
     { title: "Arquitetura & Bancos de Dados", desc: "Modelagem e consultas eficientes em PostgreSQL e MySQL." },
     { title: "SaaS & Automação Inteligente", desc: "Integrações de APIs, fluxos de WhatsApp e controle de pagamentos." },
     { title: "Comunicação & Trabalho em Equipe", desc: "Proatividade na resolução de problemas e alinhamento com metas de negócio." },
+  ];
+
+  const pillars = [
+    {
+      icon: <FaLayerGroup />,
+      titulo: "Arquitetura SaaS Multi-Tenant & Full-Stack Moderno",
+      descricao: "Construção de plataformas multiempresa com isolamento de dados por tenant, autenticação JWT/RBAC e UI responsiva.",
+      stacks: ["React 18/19", "Next.js", "TypeScript", "Node.js", "Fastify", "PostgreSQL", "Prisma ORM", "Tailwind CSS"],
+    },
+    {
+      icon: <FaSyncAlt />,
+      titulo: "Sistemas Corporativos & Modernização Legado → Web",
+      descricao: "Desenvolvimento de aplicações Desktop de alta performance e evolução estratégica de sistemas internos para arquitetura Web.",
+      stacks: ["C#", ".NET", "PHP", "MySQL", "JavaScript", "Desktop → Web"],
+    },
+    {
+      icon: <FaCogs />,
+      titulo: "Automação, Inteligência de Dados & Finanças",
+      descricao: "Integração com gateways financeiros, chatbots para WhatsApp e ferramentas de BI e auditoria conectadas ao Unimestre.",
+      stacks: ["WhatsApp API", "Mercado Pago / PIX", "Webhooks", "Python", "BI & Auditoria Unimestre"],
+    },
   ];
 
   return (
@@ -107,6 +136,37 @@ function Sobre() {
             </div>
           </motion.div>
         </div>
+
+        {/* Pilares de Engenharia & Domínio Técnico */}
+        <motion.div
+          className="engineering-pillars"
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <div className="pillars-header">
+            <span className="pillars-eyebrow">Pilares de Engenharia & Domínio Técnico</span>
+            <h3>Especialidades que sustentam meus projetos</h3>
+          </div>
+
+          <div className="pillars-grid">
+            {pillars.map((pillar, idx) => (
+              <div key={idx} className="pillar-card">
+                <div className="pillar-icon-box">{pillar.icon}</div>
+                <h4>{pillar.titulo}</h4>
+                <p>{pillar.descricao}</p>
+                <div className="pillar-tags">
+                  {pillar.stacks.map((stack, sIdx) => (
+                    <span key={sIdx} className="pillar-tag">
+                      {stack}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
